@@ -8,7 +8,7 @@ dotenv.config();
 
 const app = express();
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://your-frontend-url.vercel.app']
+  origin: [process.env.CLIENT_URL],
 }));
 const API_KEY = process.env.N2YO_API_KEY;  
 const BASE_URL = 'https://api.n2yo.com/rest/v1/satellite';
