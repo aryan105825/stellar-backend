@@ -1,4 +1,7 @@
 {
+  "name": "iss-tracker-backend",
+  "version": "1.0.0",
+  "type": "module",
   "dependencies": {
     "axios": "^1.10.0",
     "cors": "^2.8.5",
@@ -6,6 +9,7 @@
     "express": "^5.1.0"
   },
   "scripts": {
-  "start": "node index.js"
-}
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  }
 }
